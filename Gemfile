@@ -32,6 +32,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Omniath Facebook Strategy.
+gem 'omniauth-facebook'
+
+# Devise .
+gem 'devise'
+
+# File uploads.
+gem 'carrierwave'
+
+# Amazon S3 uploads.
+gem 'carrierwave_direct'
+
+# Bootstrap.
+gem 'bootstrap_form'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -45,3 +60,5 @@ group :development do
   gem 'spring'
 end
 
+# Ruby version.
+ruby "2.2.0"

@@ -1,0 +1,21 @@
+<div class="container">
+
+    <%= link_to 'Registrar objeto', new_item_path, class: 'btn btn-success' %>
+
+    <p id="notice"><%= notice %></p>
+
+    <% if !@items.blank? %>
+        <ul class="list-unstyled item-list">
+            <% for item in @items %>
+                <li><%= item %></li>
+            <% end %>
+        </ul>
+    <% else %>
+        <h3>No items</h3>
+    <% end %>
+
+
+    <%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook), class: 'btn btn-success' %>
+
+</div>
+

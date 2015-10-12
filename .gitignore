@@ -11,3 +11,7 @@
 /log/*
 !/log/.keep
 /tmp
+
+# Bower
+bower_components/
+app/assets/components/

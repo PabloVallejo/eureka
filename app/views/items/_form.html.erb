@@ -1,0 +1,8 @@
+
+<%= bootstrap_form_for(@item) do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_area :description %>
+    <%= f.text_field :status %>
+    <%= f.submit 'Publicar', class: 'btn btn-success' %>
+<% end -%>
+

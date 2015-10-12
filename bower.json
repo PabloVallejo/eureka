@@ -1,0 +1,25 @@
+{
+  "name": "eureka",
+  "version": "0.0.1",
+  "homepage": "https://github.com/PabloVallejo/eureka",
+  "authors": [
+    "Pablo Vallejo <pabloninety@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "eureka"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
