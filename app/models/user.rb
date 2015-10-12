@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -11,12 +12,27 @@ class User < ActiveRecord::Base
   # Create or get a user from Facebook's auth response.
   #
   def self.from_omniauth(auth)
-    where(auth.slice(:provider, :uid)).first_or_initialize.tap do |user|
-      user.email = auth.info.email
-      user.first_name = auth.info.first_name
-      user.last_name = auth.info.last_name
+    where(uid: auth[:uid], email: auth[:email]).first_or_create do |user|
+      user.email = auth[:email]
+      user.password = Devise.friendly_token[0,20]
+      user.first_name = auth[:first_name]
+      user.last_name = auth[:last_name]
       user.save!
     end
+  end
+
+  #
+  # String representation.
+  #
+  def to_s
+    self.full_name
+  end
+
+  #
+  # Full user name
+  #
+  def full_name
+    "#{self.first_name} #{self.last_name}"
   end
 
 

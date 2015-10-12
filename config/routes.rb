@@ -11,4 +11,7 @@ Rails.application.routes.draw do
   # Item
   resources :items
 
+  # API.
+  post 'users/create-or-login' => 'users#create_or_login'
+
 end
