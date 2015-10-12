@@ -1,20 +1,26 @@
 <div class="container">
 
-    <%= link_to 'Registrar objeto', new_item_path, class: 'btn btn-success' %>
-
     <p id="notice"><%= notice %></p>
 
     <% if !@items.blank? %>
         <ul class="list-unstyled item-list">
             <% for item in @items %>
-                <li><%= item %></li>
+                <li>
+                    <a href="<%= item_path(item) %>">
+                        <img class="img-circle" src="https://graph.facebook.com/<%= item.created_by.uid %>/picture?type=small" alt="<%= item.created_by %>" width="40" height="40">
+                        <span class="title"><%= item.title %></span>
+                        <span class="description"><%= truncate(item.description, length: 60) %></span>
+                        <span class="pull-right created-at">
+                            <span class="status label label-success"><%= item.status %></span>
+                            <%= item.created_at.strftime("%b %e") %>
+                        </span>
+                    </a>
+                </li>
             <% end %>
         </ul>
     <% else %>
         <h3>No items</h3>
     <% end %>
-
-    <h1><%= current_user %></h1>
 
 
 </div>

@@ -24,7 +24,9 @@
 
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav pull-right">
-                        <li><a href="#">Ver en GitHub</a></li>
+                        <li>
+                            <%= link_to 'Registrar objeto', new_item_path, class: 'btn btn-success' %>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -36,7 +38,7 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img class="first-slide" src="/assets/bg.jpg" alt="First slide">
+                <%= image_tag('bg.jpg') %>
                 <div class="container">
                     <div class="carousel-caption">
                         <h1>Encuentra objetos perdidos</h1>
@@ -53,8 +55,8 @@
        <div class="container">
         <hr>
 	       <p class="pull-right"><a href="#">Volver arriba</a></p>
-	       <p>&copy; 2015 Poli Open Source &middot;
-	           <a href="#">Ver en GitHub</a>
+	       <p>&copy; 2015 Eureka &middot;
+	           <a href="#">Ir al inicio</a>
 	       </p>
 	   </div>
     </footer>

@@ -1,6 +1,9 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
+  # Validate user is logged in.
+  before_action :authenticate_user!, only: [:edit, :create, :destroy]
+
   # GET /items
   # GET /items.json
   def index
@@ -25,6 +28,7 @@ class ItemsController < ApplicationController
   # POST /items.json
   def create
     @item = Item.new(item_params)
+    @item.created_by = current_user
 
     respond_to do |format|
       if @item.save

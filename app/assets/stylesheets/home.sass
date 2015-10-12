@@ -14,25 +14,57 @@
     color: #555
 
 .carousel-caption
-    bottom: 100px
+    bottom: 60px
 
 @media (min-width: 768px)
     .navbar-wrapper
         margin-top: 0
 
+.container
+    max-width: 970px
 
 // Carousel
 .carousel
-    height: 400px
+    height: 300px
 
 .carousel-inner > .item > img
-    height: 400px
+    height: 300px
 
 .carousel .item
-    height: 400px
+    height: 300px
 
 
-// Container
+// Item list.
+.item-list
+    li
+        padding: 10px
+        margin-bottom: 10px
+        border-radius: 5px
+
+        &:hover
+            background-color: #eee
+
+    li a
+        text-decoration: none
+        color: #333
+        display: block
+
+        img
+            margin-right: 10px
+
+        .title
+            font-size: 19px
+            font-weight: bold
+            margin-right: 10px
+
+        .description
+            font-weight: 300
+            font-size: 19px
+
+        .created-at
+            font-size: 17px
+            font-weight: 300
+            margin-top: 6px
 
 @media (min-width: 768px)
     .navbar-wrapper .navbar .container
