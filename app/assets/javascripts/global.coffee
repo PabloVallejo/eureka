@@ -56,7 +56,7 @@ window.checkLoginState = ->
 #
 window.fbAsyncInit = ->
   FB.init
-    appId: '908298645886291'
+    appId: '908051069244382'
     cookie: true
     xfbml: true
     version: 'v2.2'
