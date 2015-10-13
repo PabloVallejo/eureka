@@ -1,12 +1,29 @@
-<div class="container">
+<div class="container container-sm">
     <p id="notice"><%= notice %></p>
 
+    <div class="row item-detail">
+        <div class="col-md-6">
+            <img class="img-circle" src="https://graph.facebook.com/<%= @item.created_by.uid %>/picture?type=small" alt="">
+            <h4>Publicado por <strong><%= @item.created_by %></strong></h4>
+        </div>
+        <div class="col-md-6">
+            <div class="status text-right">
+                <span class="label <%= @item.status_class %>">
+                    Objeto <%= @item.status %>
+                </span>
+            </div>
+            <div class="date text-right">
+                <%= @item.created_at.strftime("%b %e de %Y a las %I:%M %p") %>
+            </div>
+        </div>
+    </div>
+
     <h1><%= @item %></h1>
-    <p><%= @item.description %></p>
+    <p><%= simple_format(@item.description) %></p>
 
 </div>
 
+
 <!--
-<%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
  -->

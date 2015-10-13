@@ -11,7 +11,7 @@
                         <span class="title"><%= item.title %></span>
                         <span class="description"><%= truncate(item.description, length: 60) %></span>
                         <span class="pull-right created-at">
-                            <span class="status label label-success"><%= item.status %></span>
+                            <span class="status label <%= item.status_class %>"><%= item.status.capitalize %></span>
                             <%= item.created_at.strftime("%b %e") %>
                         </span>
                     </a>
@@ -21,12 +21,7 @@
     <% else %>
         <h3>No items</h3>
     <% end %>
-
-
 </div>
-
-<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>
 
 <div id="status">
 </div>

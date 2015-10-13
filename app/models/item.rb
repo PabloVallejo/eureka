@@ -9,4 +9,12 @@ class Item < ActiveRecord::Base
     self.title
   end
 
+  #
+  # Get a status string.
+  #
+  def status_class
+    self.status == 'encontrado' ? 'alert-success' : 'alert-danger'
+  end
+
+
 end

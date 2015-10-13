@@ -1,8 +1,24 @@
-<div class="container">
+<div class="container new-item">
 
-    <h1>New Item</h1>
+    <% if !current_user -%>
+        <h3 class="text-center">
+            Inicia sesión con Facebook para publicar tu objeto.
+        </h3>
+        <p class="text-center">
+            Puedes publicar objetos que se te hayan perdido u objetos que encontraste.
+        </p>
 
-    <%= render 'form' %>
-    <%= link_to 'Back', items_path %>
+        <p class="text-center">
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+            </fb:login-button>
+        </p>
+    <% else -%>
+
+        <h2>Registrar objeto</h2>
+        <p>Puedes publicar objetos que se te hayan perdido u objetos que encontraste.</p>
+        <p>&nbsp;</p>
+        <%= render 'form' %>
+
+    <% end -%>
 
 </div>
