@@ -23,7 +23,7 @@ ready = ->
         '/users/create-or-login',
         response,
         (data) ->
-          console.log data
+          window.location.reload()
       )
 
   #
