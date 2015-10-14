@@ -57,6 +57,17 @@ class ItemsController < ApplicationController
   def update
     respond_to do |format|
       if @item.update(item_params)
+
+         # Save attachments.
+        if params[:files]
+          params[:files].each do |file|
+            @item.attachments.create(
+              file: file,
+              created_by: current_user
+            )
+          end
+        end
+
         format.html { redirect_to @item, notice: 'Item was successfully updated.' }
         format.json { render :show, status: :ok, location: @item }
       else

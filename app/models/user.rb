@@ -8,6 +8,9 @@ class User < ActiveRecord::Base
   # Omniath.
   devise :omniauthable, :omniauth_providers => [:facebook]
 
+  # Items
+  has_many :items
+
   #
   # Create or get a user from Facebook's auth response.
   #

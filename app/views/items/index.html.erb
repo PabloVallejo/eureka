@@ -1,6 +1,16 @@
-<div class="container">
-
+<div class="container item-index">
     <p id="notice"><%= notice %></p>
+
+    <div class="row">
+        <div class="col-md-12" style="margin-bottom: 30px;">
+            <div class="input-group">
+                <input type="text" class="form-control input-lg js-search-item" placeholder="e.j iPhone ...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default btn-lg" type="button">Buscar</button>
+                </span>
+            </div>
+        </div>
+    </div>
 
     <% if !@items.blank? %>
         <ul class="list-unstyled item-list">

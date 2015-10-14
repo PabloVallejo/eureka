@@ -15,3 +15,6 @@
 # Bower
 bower_components/
 app/assets/components/
+
+# Uploads
+public/uploads

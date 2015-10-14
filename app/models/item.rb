@@ -4,7 +4,7 @@ class Item < ActiveRecord::Base
   belongs_to :created_by, class_name: 'User'
 
   # Attachments.
-  has_many :attachments, class_name: 'ItemAttachment'
+  has_many :attachments, class_name: 'ItemAttachment', dependent: :destroy
 
   #
   # Model string representation.

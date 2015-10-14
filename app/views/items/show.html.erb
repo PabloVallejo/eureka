@@ -1,9 +1,15 @@
 <div class="container container-sm item-detail">
-    <p id="notice"><%= notice %></p>
 
     <div class="header-nav">
         <a href="/" style="color: #333;">← Todos los objetos</a>
     </div>
+
+    <% if notice -%>
+        <div class="alert alert-success">
+            <p id="notice"><%= notice %></p>
+        </div>
+    <% end -%>
+
     <div class="row item-detail">
         <div class="col-md-6">
             <img class="img-circle" src="https://graph.facebook.com/<%= @item.created_by.uid %>/picture?type=small" alt="">
@@ -27,7 +33,9 @@
 
     <div class="row">
         <% if !@item.attachments.blank? %>
-            <h5>Imágenes</h5>
+            <div class="col-md-12">
+                <h5>Imágenes</h5>
+            </div>
           <% for attachment in @item.attachments %>
             <div class="col-xs-6 col-md-3">
                 <a href="<%= attachment.file.url %>" target="_blank" class="thumbnail">

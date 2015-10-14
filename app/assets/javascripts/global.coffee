@@ -1,5 +1,14 @@
 ready = ->
 
+  # Handle search
+  $('.js-search-item').keyup (e) ->
+    term = $(e.currentTarget).val()
+    $('.item-list li').each (k, v) ->
+      name = $(this).find('.title').text()
+      reg = new RegExp(term, 'i')
+
+      if !reg.test(name) then $(this).hide() else $(this).show()
+
   #
   # Load async.
   #
