@@ -1,6 +1,9 @@
-<div class="container container-sm">
+<div class="container container-sm item-detail">
     <p id="notice"><%= notice %></p>
 
+    <div class="header-nav">
+        <a href="/" style="color: #333;">← Todos los objetos</a>
+    </div>
     <div class="row item-detail">
         <div class="col-md-6">
             <img class="img-circle" src="https://graph.facebook.com/<%= @item.created_by.uid %>/picture?type=small" alt="">
@@ -20,10 +23,24 @@
 
     <h1><%= @item %></h1>
     <p><%= simple_format(@item.description) %></p>
+    <hr>
+
+    <div class="row">
+        <% if !@item.attachments.blank? %>
+            <h5>Imágenes</h5>
+          <% for attachment in @item.attachments %>
+            <div class="col-xs-6 col-md-3">
+                <a href="<%= attachment.file.url %>" target="_blank" class="thumbnail">
+                    <img src="<%= attachment.file.url(:thumb) %>" alt="...">
+                </a>
+            </div>
+          <% end %>
+        <% else %>
+            <div class="col-md-12">
+                <h4>Sin imagénes</h4>
+                <p class="text-muted">Este objeto no tiene imágenes</p>
+            </div>
+        <% end %>
+    </div>
 
 </div>
-
-
-<!--
-<%= link_to 'Back', items_path %>
- -->

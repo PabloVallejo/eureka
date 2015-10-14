@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>css.js - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../../../";
+</script>
+
+<script src="../../../../../js/jquery.js"></script>
+<script src="../../../../../js/darkfish.js"></script>
+
+<link href="../../../../../css/fonts.css" rel="stylesheet">
+<link href="../../../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../../../Procfile.html">Procfile</a>
+  
+    <li><a href="../../../../../README_md.html">README</a>
+  
+    <li><a href="../../../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/Gruntfile_js.html">Gruntfile.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/README_md.html">README</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-commonjs-generator_js.html">bs-commonjs-generator.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-glyphicons-data-generator_js.html">bs-glyphicons-data-generator.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-lessdoc-parser_js.html">bs-lessdoc-parser.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-raw-files-generator_js.html">bs-raw-files-generator.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/configBridge_json.html">configBridge.json</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/affix_js.html">affix.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/alert_js.html">alert.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/button_js.html">button.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/carousel_js.html">carousel.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/collapse_js.html">collapse.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/dropdown_js.html">dropdown.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/modal_js.html">modal.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/popover_js.html">popover.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/scrollspy_js.html">scrollspy.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/tab_js.html">tab.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/tooltip_js.html">tooltip.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/transition_js.html">transition.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/badges_less.html">badges.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/bootstrap_less.html">bootstrap.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/breadcrumbs_less.html">breadcrumbs.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/button-groups_less.html">button-groups.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/carousel_less.html">carousel.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/close_less.html">close.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/code_less.html">code.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/component-animations_less.html">component-animations.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/dropdowns_less.html">dropdowns.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/glyphicons_less.html">glyphicons.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/input-groups_less.html">input-groups.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/jumbotron_less.html">jumbotron.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/media_less.html">media.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins_less.html">mixins.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/background-variant_less.html">background-variant.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/border-radius_less.html">border-radius.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/center-block_less.html">center-block.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/clearfix_less.html">clearfix.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/gradients_less.html">gradients.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/grid-framework_less.html">grid-framework.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/hide-text_less.html">hide-text.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/image_less.html">image.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/nav-divider_less.html">nav-divider.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/nav-vertical-align_less.html">nav-vertical-align.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/opacity_less.html">opacity.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/progress-bar_less.html">progress-bar.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/reset-filter_less.html">reset-filter.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/reset-text_less.html">reset-text.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/resize_less.html">resize.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/responsive-visibility_less.html">responsive-visibility.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/size_less.html">size.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/tab-focus_less.html">tab-focus.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/table-row_less.html">table-row.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/text-emphasis_less.html">text-emphasis.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/text-overflow_less.html">text-overflow.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/vendor-prefixes_less.html">vendor-prefixes.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/modals_less.html">modals.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/navbar_less.html">navbar.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/navs_less.html">navs.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/normalize_less.html">normalize.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/pager_less.html">pager.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/popovers_less.html">popovers.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/print_less.html">print.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/progress-bars_less.html">progress-bars.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/responsive-embed_less.html">responsive-embed.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/responsive-utilities_less.html">responsive-utilities.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/scaffolding_less.html">scaffolding.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/tables_less.html">tables.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/theme_less.html">theme.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/thumbnails_less.html">thumbnails.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/tooltip_less.html">tooltip.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/type_less.html">type.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/utilities_less.html">utilities.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/variables_less.html">variables.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/wells_less.html">wells.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/package_js.html">package.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/package_json.html">package.json</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/MIT-LICENSE_txt.html">MIT-LICENSE</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/dist/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/dist/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/dist/jquery_min_map.html">jquery.min.map</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/jsonp_js.html">jsonp.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/load_js.html">load.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/parseJSON_js.html">parseJSON.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/parseXML_js.html">parseXML.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/script_js.html">script.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/var/nonce_js.html">nonce.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/var/rquery_js.html">rquery.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/xhr_js.html">xhr.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes_js.html">attributes.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/attr_js.html">attr.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/classes_js.html">classes.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/prop_js.html">prop.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/val_js.html">val.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/callbacks_js.html">callbacks.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core_js.html">core.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/access_js.html">access.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/init_js.html">init.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/parseHTML_js.html">parseHTML.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/ready_js.html">ready.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/var/rsingleTag_js.html">rsingleTag.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css_js.html">css.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/addGetHookIf_js.html">addGetHookIf.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/curCSS_js.html">curCSS.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/defaultDisplay_js.html">defaultDisplay.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/hiddenVisibleSelectors_js.html">hiddenVisibleSelectors.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/swap_js.html">swap.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/cssExpand_js.html">cssExpand.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/getStyles_js.html">getStyles.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/isHidden_js.html">isHidden.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/rmargin_js.html">rmargin.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/rnumnonpx_js.html">rnumnonpx.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data_js.html">data.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/Data_js.html">Data.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/accepts_js.html">accepts.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/var/data_priv_js.html">data_priv.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/var/data_user_js.html">data_user.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/deferred_js.html">deferred.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/deprecated_js.html">deprecated.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/dimensions_js.html">dimensions.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/effects_js.html">effects.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/effects/Tween_js.html">Tween.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/effects/animatedSelector_js.html">animatedSelector.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event_js.html">event.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event/alias_js.html">alias.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/exports/amd_js.html">amd.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/exports/global_js.html">global.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/intro_js.html">intro.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation_js.html">manipulation.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation/_evalUrl_js.html">_evalUrl.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation/var/rcheckableType_js.html">rcheckableType.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/offset_js.html">offset.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/outro_js.html">outro.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/queue_js.html">queue.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/queue/delay_js.html">delay.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/selector-native_js.html">selector-native.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/selector-sizzle_js.html">selector-sizzle.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/selector_js.html">selector.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/serialize_js.html">serialize.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_js.html">sizzle.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_min_js.html">sizzle.min.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_min_map.html">sizzle.min.map</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/traversing_js.html">traversing.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/traversing/findFilter_js.html">findFilter.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/traversing/var/rneedsContext_js.html">rneedsContext.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/arr_js.html">arr.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/class2type_js.html">class2type.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/concat_js.html">concat.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/hasOwn_js.html">hasOwn.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/indexOf_js.html">indexOf.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/pnum_js.html">pnum.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/push_js.html">push.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/rnotwhite_js.html">rnotwhite.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/slice_js.html">slice.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/strundefined_js.html">strundefined.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/toString_js.html">toString.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/wrap_js.html">wrap.js</a>
+  
+    <li><a href="../../../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../../../app/assets/javascripts/global_coffee.html">global.coffee</a>
+  
+    <li><a href="../../../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../../../app/assets/stylesheets/carousel_sass.html">carousel.sass</a>
+  
+    <li><a href="../../../../../app/assets/stylesheets/home_sass.html">home.sass</a>
+  
+    <li><a href="../../../../../app/views/items/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../../../app/views/items/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../../../bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../../../tmp/pids/server_pid.html">server.pid</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page app/assets/components/jquery/src/css.js">
+
+<p>define([</p>
+
+<pre>&quot;./core&quot;,
+&quot;./var/pnum&quot;,
+&quot;./core/access&quot;,
+&quot;./css/var/rmargin&quot;,
+&quot;./css/var/rnumnonpx&quot;,
+&quot;./css/var/cssExpand&quot;,
+&quot;./css/var/isHidden&quot;,
+&quot;./css/var/getStyles&quot;,
+&quot;./css/curCSS&quot;,
+&quot;./css/defaultDisplay&quot;,
+&quot;./css/addGetHookIf&quot;,
+&quot;./css/support&quot;,
+&quot;./data/var/data_priv&quot;,
+
+&quot;./core/init&quot;,
+&quot;./css/swap&quot;,
+&quot;./core/ready&quot;,
+&quot;./selector&quot; // contains</pre>
+
+<p>], function( jQuery, pnum, access, rmargin, rnumnonpx, cssExpand, isHidden,</p>
+
+<pre>getStyles, curCSS, defaultDisplay, addGetHookIf, support, data_priv ) {</pre>
+
+<p>var</p>
+
+<pre>// Swappable if display is none or starts with table except &quot;table&quot;, &quot;table-cell&quot;, or &quot;table-caption&quot;
+// See here for display values: https://developer.mozilla.org/en-US/docs/CSS/display
+rdisplayswap = /^(none|table(?!-c[ea]).+)/,
+rnumsplit = new RegExp( &quot;^(&quot; + pnum + &quot;)(.*)$&quot;, &quot;i&quot; ),
+rrelNum = new RegExp( &quot;^([+-])=(&quot; + pnum + &quot;)&quot;, &quot;i&quot; ),
+
+cssShow = { position: &quot;absolute&quot;, visibility: &quot;hidden&quot;, display: &quot;block&quot; },
+cssNormalTransform = {
+        letterSpacing: &quot;0&quot;,
+        fontWeight: &quot;400&quot;
+},
+
+cssPrefixes = [ &quot;Webkit&quot;, &quot;O&quot;, &quot;Moz&quot;, &quot;ms&quot; ];</pre>
+
+<p>// Return a css property mapped to a potentially vendor prefixed property
+function vendorPropName( style, name ) {</p>
+
+<pre>// Shortcut for names that are not vendor prefixed
+if ( name in style ) {
+        return name;
+}
+
+// Check for vendor prefixed names
+var capName = name[0].toUpperCase() + name.slice(1),
+        origName = name,
+        i = cssPrefixes.length;
+
+while ( i-- ) {
+        name = cssPrefixes[ i ] + capName;
+        if ( name in style ) {
+                return name;
+        }
+}
+
+return origName;</pre>
+
+<p>}</p>
+
+<p>function setPositiveNumber( elem, value, subtract ) {</p>
+
+<pre>var matches = rnumsplit.exec( value );
+return matches ?
+        // Guard against undefined &quot;subtract&quot;, e.g., when used as in cssHooks
+        Math.max( 0, matches[ 1 ] - ( subtract || 0 ) ) + ( matches[ 2 ] || &quot;px&quot; ) :
+        value;</pre>
+
+<p>}</p>
+
+<p>function augmentWidthOrHeight( elem, name, extra, isBorderBox, styles ) {</p>
+
+<pre>var i = extra === ( isBorderBox ? &quot;border&quot; : &quot;content&quot; ) ?
+        // If we already have the right measurement, avoid augmentation
+        4 :
+        // Otherwise initialize for horizontal or vertical properties
+        name === &quot;width&quot; ? 1 : 0,
+
+        val = 0;
+
+for ( ; i &lt; 4; i += 2 ) {
+        // Both box models exclude margin, so add it if we want it
+        if ( extra === &quot;margin&quot; ) {
+                val += jQuery.css( elem, extra + cssExpand[ i ], true, styles );
+        }
+
+        if ( isBorderBox ) {
+                // border-box includes padding, so remove it if we want content
+                if ( extra === &quot;content&quot; ) {
+                        val -= jQuery.css( elem, &quot;padding&quot; + cssExpand[ i ], true, styles );
+                }
+
+                // At this point, extra isn&#39;t border nor margin, so remove border
+                if ( extra !== &quot;margin&quot; ) {
+                        val -= jQuery.css( elem, &quot;border&quot; + cssExpand[ i ] + &quot;Width&quot;, true, styles );
+                }
+        } else {
+                // At this point, extra isn&#39;t content, so add padding
+                val += jQuery.css( elem, &quot;padding&quot; + cssExpand[ i ], true, styles );
+
+                // At this point, extra isn&#39;t content nor padding, so add border
+                if ( extra !== &quot;padding&quot; ) {
+                        val += jQuery.css( elem, &quot;border&quot; + cssExpand[ i ] + &quot;Width&quot;, true, styles );
+                }
+        }
+}
+
+return val;</pre>
+
+<p>}</p>
+
+<p>function getWidthOrHeight( elem, name, extra ) {</p>
+
+<pre>// Start with offset property, which is equivalent to the border-box value
+var valueIsBorderBox = true,
+        val = name === &quot;width&quot; ? elem.offsetWidth : elem.offsetHeight,
+        styles = getStyles( elem ),
+        isBorderBox = jQuery.css( elem, &quot;boxSizing&quot;, false, styles ) === &quot;border-box&quot;;
+
+// Some non-html elements return undefined for offsetWidth, so check for null/undefined
+// svg - https://bugzilla.mozilla.org/show_bug.cgi?id=649285
+// MathML - https://bugzilla.mozilla.org/show_bug.cgi?id=491668
+if ( val &lt;= 0 || val == null ) {
+        // Fall back to computed then uncomputed css if necessary
+        val = curCSS( elem, name, styles );
+        if ( val &lt; 0 || val == null ) {
+                val = elem.style[ name ];
+        }
+
+        // Computed unit is not pixels. Stop here and return.
+        if ( rnumnonpx.test(val) ) {
+                return val;
+        }
+
+        // Check for style in case a browser which returns unreliable values
+        // for getComputedStyle silently falls back to the reliable elem.style
+        valueIsBorderBox = isBorderBox &amp;&amp;
+                ( support.boxSizingReliable() || val === elem.style[ name ] );
+
+        // Normalize &quot;&quot;, auto, and prepare for extra
+        val = parseFloat( val ) || 0;
+}
+
+// Use the active box-sizing model to add/subtract irrelevant styles
+return ( val +
+        augmentWidthOrHeight(
+                elem,
+                name,
+                extra || ( isBorderBox ? &quot;border&quot; : &quot;content&quot; ),
+                valueIsBorderBox,
+                styles
+        )
+) + &quot;px&quot;;</pre>
+
+<p>}</p>
+
+<p>function showHide( elements, show ) {</p>
+
+<pre>var display, elem, hidden,
+        values = [],
+        index = 0,
+        length = elements.length;
+
+for ( ; index &lt; length; index++ ) {
+        elem = elements[ index ];
+        if ( !elem.style ) {
+                continue;
+        }
+
+        values[ index ] = data_priv.get( elem, &quot;olddisplay&quot; );
+        display = elem.style.display;
+        if ( show ) {
+                // Reset the inline display of this element to learn if it is
+                // being hidden by cascaded rules or not
+                if ( !values[ index ] &amp;&amp; display === &quot;none&quot; ) {
+                        elem.style.display = &quot;&quot;;
+                }
+
+                // Set elements which have been overridden with display: none
+                // in a stylesheet to whatever the default browser style is
+                // for such an element
+                if ( elem.style.display === &quot;&quot; &amp;&amp; isHidden( elem ) ) {
+                        values[ index ] = data_priv.access( elem, &quot;olddisplay&quot;, defaultDisplay(elem.nodeName) );
+                }
+        } else {
+                hidden = isHidden( elem );
+
+                if ( display !== &quot;none&quot; || !hidden ) {
+                        data_priv.set( elem, &quot;olddisplay&quot;, hidden ? display : jQuery.css( elem, &quot;display&quot; ) );
+                }
+        }
+}
+
+// Set the display of most of the elements in a second loop
+// to avoid the constant reflow
+for ( index = 0; index &lt; length; index++ ) {
+        elem = elements[ index ];
+        if ( !elem.style ) {
+                continue;
+        }
+        if ( !show || elem.style.display === &quot;none&quot; || elem.style.display === &quot;&quot; ) {
+                elem.style.display = show ? values[ index ] || &quot;&quot; : &quot;none&quot;;
+        }
+}
+
+return elements;</pre>
+
+<p>}</p>
+
+<p>jQuery.extend({</p>
+
+<pre>// Add in style property hooks for overriding the default
+// behavior of getting and setting a style property
+cssHooks: {
+        opacity: {
+                get: function( elem, computed ) {
+                        if ( computed ) {
+
+                                // We should always get a number back from opacity
+                                var ret = curCSS( elem, &quot;opacity&quot; );
+                                return ret === &quot;&quot; ? &quot;1&quot; : ret;
+                        }
+                }
+        }
+},
+
+// Don&#39;t automatically add &quot;px&quot; to these possibly-unitless properties
+cssNumber: {
+        &quot;columnCount&quot;: true,
+        &quot;fillOpacity&quot;: true,
+        &quot;flexGrow&quot;: true,
+        &quot;flexShrink&quot;: true,
+        &quot;fontWeight&quot;: true,
+        &quot;lineHeight&quot;: true,
+        &quot;opacity&quot;: true,
+        &quot;order&quot;: true,
+        &quot;orphans&quot;: true,
+        &quot;widows&quot;: true,
+        &quot;zIndex&quot;: true,
+        &quot;zoom&quot;: true
+},
+
+// Add in properties whose names you wish to fix before
+// setting or getting the value
+cssProps: {
+        &quot;float&quot;: &quot;cssFloat&quot;
+},
+
+// Get and set the style property on a DOM Node
+style: function( elem, name, value, extra ) {
+
+        // Don&#39;t set styles on text and comment nodes
+        if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
+                return;
+        }
+
+        // Make sure that we&#39;re working with the right name
+        var ret, type, hooks,
+                origName = jQuery.camelCase( name ),
+                style = elem.style;
+
+        name = jQuery.cssProps[ origName ] || ( jQuery.cssProps[ origName ] = vendorPropName( style, origName ) );
+
+        // Gets hook for the prefixed version, then unprefixed version
+        hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+
+        // Check if we&#39;re setting a value
+        if ( value !== undefined ) {
+                type = typeof value;
+
+                // Convert &quot;+=&quot; or &quot;-=&quot; to relative numbers (#7345)
+                if ( type === &quot;string&quot; &amp;&amp; (ret = rrelNum.exec( value )) ) {
+                        value = ( ret[1] + 1 ) * ret[2] + parseFloat( jQuery.css( elem, name ) );
+                        // Fixes bug #9237
+                        type = &quot;number&quot;;
+                }
+
+                // Make sure that null and NaN values aren&#39;t set (#7116)
+                if ( value == null || value !== value ) {
+                        return;
+                }
+
+                // If a number, add &#39;px&#39; to the (except for certain CSS properties)
+                if ( type === &quot;number&quot; &amp;&amp; !jQuery.cssNumber[ origName ] ) {
+                        value += &quot;px&quot;;
+                }
+
+                // Support: IE9-11+
+                // background-* props affect original clone&#39;s values
+                if ( !support.clearCloneStyle &amp;&amp; value === &quot;&quot; &amp;&amp; name.indexOf( &quot;background&quot; ) === 0 ) {
+                        style[ name ] = &quot;inherit&quot;;
+                }
+
+                // If a hook was provided, use that value, otherwise just set the specified value
+                if ( !hooks || !(&quot;set&quot; in hooks) || (value = hooks.set( elem, value, extra )) !== undefined ) {
+                        style[ name ] = value;
+                }
+
+        } else {
+                // If a hook was provided get the non-computed value from there
+                if ( hooks &amp;&amp; &quot;get&quot; in hooks &amp;&amp; (ret = hooks.get( elem, false, extra )) !== undefined ) {
+                        return ret;
+                }
+
+                // Otherwise just get the value from the style object
+                return style[ name ];
+        }
+},
+
+css: function( elem, name, extra, styles ) {
+        var val, num, hooks,
+                origName = jQuery.camelCase( name );
+
+        // Make sure that we&#39;re working with the right name
+        name = jQuery.cssProps[ origName ] || ( jQuery.cssProps[ origName ] = vendorPropName( elem.style, origName ) );
+
+        // Try prefixed name followed by the unprefixed name
+        hooks = jQuery.cssHooks[ name ] || jQuery.cssHooks[ origName ];
+
+        // If a hook was provided get the computed value from there
+        if ( hooks &amp;&amp; &quot;get&quot; in hooks ) {
+                val = hooks.get( elem, true, extra );
+        }
+
+        // Otherwise, if a way to get the computed value exists, use that
+        if ( val === undefined ) {
+                val = curCSS( elem, name, styles );
+        }
+
+        // Convert &quot;normal&quot; to computed value
+        if ( val === &quot;normal&quot; &amp;&amp; name in cssNormalTransform ) {
+                val = cssNormalTransform[ name ];
+        }
+
+        // Make numeric if forced or a qualifier was provided and val looks numeric
+        if ( extra === &quot;&quot; || extra ) {
+                num = parseFloat( val );
+                return extra === true || jQuery.isNumeric( num ) ? num || 0 : val;
+        }
+        return val;
+}</pre>
+
+<p>});</p>
+
+<p>jQuery.each([ “height”, “width” ], function( i, name ) {</p>
+
+<pre>jQuery.cssHooks[ name ] = {
+        get: function( elem, computed, extra ) {
+                if ( computed ) {
+
+                        // Certain elements can have dimension info if we invisibly show them
+                        // but it must have a current display style that would benefit
+                        return rdisplayswap.test( jQuery.css( elem, &quot;display&quot; ) ) &amp;&amp; elem.offsetWidth === 0 ?
+                                jQuery.swap( elem, cssShow, function() {
+                                        return getWidthOrHeight( elem, name, extra );
+                                }) :
+                                getWidthOrHeight( elem, name, extra );
+                }
+        },
+
+        set: function( elem, value, extra ) {
+                var styles = extra &amp;&amp; getStyles( elem );
+                return setPositiveNumber( elem, value, extra ?
+                        augmentWidthOrHeight(
+                                elem,
+                                name,
+                                extra,
+                                jQuery.css( elem, &quot;boxSizing&quot;, false, styles ) === &quot;border-box&quot;,
+                                styles
+                        ) : 0
+                );
+        }
+};</pre>
+
+<p>});</p>
+
+<p>// Support: Android 2.3 jQuery.cssHooks.marginRight = addGetHookIf(
+support.reliableMarginRight,</p>
+
+<pre>function( elem, computed ) {
+        if ( computed ) {
+                return jQuery.swap( elem, { &quot;display&quot;: &quot;inline-block&quot; },
+                        curCSS, [ elem, &quot;marginRight&quot; ] );
+        }
+}</pre>
+
+<p>);</p>
+
+<p>// These hooks are used by animate to expand properties jQuery.each({</p>
+
+<pre>margin: &quot;&quot;,
+padding: &quot;&quot;,
+border: &quot;Width&quot;</pre>
+
+<p>}, function( prefix, suffix ) {</p>
+
+<pre>jQuery.cssHooks[ prefix + suffix ] = {
+        expand: function( value ) {
+                var i = 0,
+                        expanded = {},
+
+                        // Assumes a single number if not a string
+                        parts = typeof value === &quot;string&quot; ? value.split(&quot; &quot;) : [ value ];
+
+                for ( ; i &lt; 4; i++ ) {
+                        expanded[ prefix + cssExpand[ i ] + suffix ] =
+                                parts[ i ] || parts[ i - 2 ] || parts[ 0 ];
+                }
+
+                return expanded;
+        }
+};
+
+if ( !rmargin.test( prefix ) ) {
+        jQuery.cssHooks[ prefix + suffix ].set = setPositiveNumber;
+}</pre>
+
+<p>});</p>
+
+<p>jQuery.fn.extend({</p>
+
+<pre>css: function( name, value ) {
+        return access( this, function( elem, name, value ) {
+                var styles, len,
+                        map = {},
+                        i = 0;
+
+                if ( jQuery.isArray( name ) ) {
+                        styles = getStyles( elem );
+                        len = name.length;
+
+                        for ( ; i &lt; len; i++ ) {
+                                map[ name[ i ] ] = jQuery.css( elem, name[ i ], false, styles );
+                        }
+
+                        return map;
+                }
+
+                return value !== undefined ?
+                        jQuery.style( elem, name, value ) :
+                        jQuery.css( elem, name );
+        }, name, value, arguments.length &gt; 1 );
+},
+show: function() {
+        return showHide( this, true );
+},
+hide: function() {
+        return showHide( this );
+},
+toggle: function( state ) {
+        if ( typeof state === &quot;boolean&quot; ) {
+                return state ? this.show() : this.hide();
+        }
+
+        return this.each(function() {
+                if ( isHidden( this ) ) {
+                        jQuery( this ).show();
+                } else {
+                        jQuery( this ).hide();
+                }
+        });
+}</pre>
+
+<p>});</p>
+
+<p>return jQuery; });</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

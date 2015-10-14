@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>normalize.less - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../../../";
+</script>
+
+<script src="../../../../../js/jquery.js"></script>
+<script src="../../../../../js/darkfish.js"></script>
+
+<link href="../../../../../css/fonts.css" rel="stylesheet">
+<link href="../../../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../../../Procfile.html">Procfile</a>
+  
+    <li><a href="../../../../../README_md.html">README</a>
+  
+    <li><a href="../../../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/Gruntfile_js.html">Gruntfile.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/README_md.html">README</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/dist/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-commonjs-generator_js.html">bs-commonjs-generator.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-glyphicons-data-generator_js.html">bs-glyphicons-data-generator.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-lessdoc-parser_js.html">bs-lessdoc-parser.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/bs-raw-files-generator_js.html">bs-raw-files-generator.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/grunt/configBridge_json.html">configBridge.json</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/affix_js.html">affix.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/alert_js.html">alert.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/button_js.html">button.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/carousel_js.html">carousel.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/collapse_js.html">collapse.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/dropdown_js.html">dropdown.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/modal_js.html">modal.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/popover_js.html">popover.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/scrollspy_js.html">scrollspy.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/tab_js.html">tab.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/tooltip_js.html">tooltip.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/js/transition_js.html">transition.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/badges_less.html">badges.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/bootstrap_less.html">bootstrap.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/breadcrumbs_less.html">breadcrumbs.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/button-groups_less.html">button-groups.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/carousel_less.html">carousel.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/close_less.html">close.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/code_less.html">code.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/component-animations_less.html">component-animations.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/dropdowns_less.html">dropdowns.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/glyphicons_less.html">glyphicons.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/input-groups_less.html">input-groups.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/jumbotron_less.html">jumbotron.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/media_less.html">media.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins_less.html">mixins.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/background-variant_less.html">background-variant.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/border-radius_less.html">border-radius.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/center-block_less.html">center-block.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/clearfix_less.html">clearfix.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/gradients_less.html">gradients.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/grid-framework_less.html">grid-framework.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/hide-text_less.html">hide-text.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/image_less.html">image.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/nav-divider_less.html">nav-divider.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/nav-vertical-align_less.html">nav-vertical-align.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/opacity_less.html">opacity.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/progress-bar_less.html">progress-bar.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/reset-filter_less.html">reset-filter.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/reset-text_less.html">reset-text.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/resize_less.html">resize.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/responsive-visibility_less.html">responsive-visibility.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/size_less.html">size.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/tab-focus_less.html">tab-focus.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/table-row_less.html">table-row.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/text-emphasis_less.html">text-emphasis.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/text-overflow_less.html">text-overflow.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/mixins/vendor-prefixes_less.html">vendor-prefixes.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/modals_less.html">modals.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/navbar_less.html">navbar.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/navs_less.html">navs.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/normalize_less.html">normalize.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/pager_less.html">pager.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/popovers_less.html">popovers.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/print_less.html">print.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/progress-bars_less.html">progress-bars.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/responsive-embed_less.html">responsive-embed.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/responsive-utilities_less.html">responsive-utilities.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/scaffolding_less.html">scaffolding.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/tables_less.html">tables.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/theme_less.html">theme.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/thumbnails_less.html">thumbnails.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/tooltip_less.html">tooltip.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/type_less.html">type.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/utilities_less.html">utilities.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/variables_less.html">variables.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/less/wells_less.html">wells.less</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/package_js.html">package.js</a>
+  
+    <li><a href="../../../../../app/assets/components/bootstrap/package_json.html">package.json</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/MIT-LICENSE_txt.html">MIT-LICENSE</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/dist/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/dist/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/dist/jquery_min_map.html">jquery.min.map</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/jsonp_js.html">jsonp.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/load_js.html">load.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/parseJSON_js.html">parseJSON.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/parseXML_js.html">parseXML.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/script_js.html">script.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/var/nonce_js.html">nonce.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/var/rquery_js.html">rquery.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/ajax/xhr_js.html">xhr.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes_js.html">attributes.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/attr_js.html">attr.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/classes_js.html">classes.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/prop_js.html">prop.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/attributes/val_js.html">val.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/callbacks_js.html">callbacks.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core_js.html">core.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/access_js.html">access.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/init_js.html">init.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/parseHTML_js.html">parseHTML.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/ready_js.html">ready.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/core/var/rsingleTag_js.html">rsingleTag.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css_js.html">css.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/addGetHookIf_js.html">addGetHookIf.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/curCSS_js.html">curCSS.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/defaultDisplay_js.html">defaultDisplay.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/hiddenVisibleSelectors_js.html">hiddenVisibleSelectors.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/swap_js.html">swap.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/cssExpand_js.html">cssExpand.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/getStyles_js.html">getStyles.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/isHidden_js.html">isHidden.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/rmargin_js.html">rmargin.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/css/var/rnumnonpx_js.html">rnumnonpx.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data_js.html">data.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/Data_js.html">Data.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/accepts_js.html">accepts.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/var/data_priv_js.html">data_priv.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/data/var/data_user_js.html">data_user.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/deferred_js.html">deferred.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/deprecated_js.html">deprecated.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/dimensions_js.html">dimensions.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/effects_js.html">effects.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/effects/Tween_js.html">Tween.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/effects/animatedSelector_js.html">animatedSelector.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event_js.html">event.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event/alias_js.html">alias.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/event/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/exports/amd_js.html">amd.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/exports/global_js.html">global.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/intro_js.html">intro.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation_js.html">manipulation.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation/_evalUrl_js.html">_evalUrl.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/manipulation/var/rcheckableType_js.html">rcheckableType.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/offset_js.html">offset.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/outro_js.html">outro.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/queue_js.html">queue.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/queue/delay_js.html">delay.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/selector-native_js.html">selector-native.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/selector-sizzle_js.html">selector-sizzle.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/selector_js.html">selector.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/serialize_js.html">serialize.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_js.html">sizzle.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_min_js.html">sizzle.min.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_min_map.html">sizzle.min.map</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/traversing_js.html">traversing.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/traversing/findFilter_js.html">findFilter.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/traversing/var/rneedsContext_js.html">rneedsContext.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/arr_js.html">arr.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/class2type_js.html">class2type.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/concat_js.html">concat.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/hasOwn_js.html">hasOwn.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/indexOf_js.html">indexOf.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/pnum_js.html">pnum.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/push_js.html">push.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/rnotwhite_js.html">rnotwhite.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/slice_js.html">slice.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/strundefined_js.html">strundefined.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/support_js.html">support.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/var/toString_js.html">toString.js</a>
+  
+    <li><a href="../../../../../app/assets/components/jquery/src/wrap_js.html">wrap.js</a>
+  
+    <li><a href="../../../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../../../app/assets/javascripts/global_coffee.html">global.coffee</a>
+  
+    <li><a href="../../../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../../../app/assets/stylesheets/carousel_sass.html">carousel.sass</a>
+  
+    <li><a href="../../../../../app/assets/stylesheets/home_sass.html">home.sass</a>
+  
+    <li><a href="../../../../../app/views/items/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../../../app/views/items/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../../../bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../../../tmp/pids/server_pid.html">server.pid</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page app/assets/components/bootstrap/less/normalize.less">
+
+<pre>! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css</pre>
+
+<p>// // 1. Set default font family to sans-serif. // 2. Prevent iOS and IE
+text size adjust after device orientation change, //    without disabling
+user zoom. //</p>
+
+<p>html {</p>
+
+<pre>font-family: sans-serif; // 1
+-ms-text-size-adjust: 100%; // 2
+-webkit-text-size-adjust: 100%; // 2</pre>
+
+<p>}</p>
+
+<p>// // Remove default margin. //</p>
+
+<p>body {</p>
+
+<pre>margin: 0;</pre>
+
+<p>}</p>
+
+<p>// HTML5 display definitions //
+==========================================================================</p>
+
+<p>// // Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `details` or `summary` in IE
+10/11 // and Firefox. // Correct `block` display not defined for `main` in
+IE 11. //</p>
+
+<p>article, aside, details, figcaption, figure, footer, header, hgroup, main,
+menu, nav, section, summary {</p>
+
+<pre>display: block;</pre>
+
+<p>}</p>
+
+<p>// // 1. Correct `inline-block` display not defined in IE 8/9. // 2.
+Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+//</p>
+
+<p>audio, canvas, progress, video {</p>
+
+<pre>display: inline-block; // 1
+vertical-align: baseline; // 2</pre>
+
+<p>}</p>
+
+<p>// // Prevent modern browsers from displaying `audio` without controls. //
+Remove excess height in iOS 5 devices. //</p>
+
+<p><a href="controls">audio:not(</a>) {</p>
+
+<pre>display: none;
+height: 0;</pre>
+
+<p>}</p>
+
+<p>// // Address `[hidden]` styling not present in IE 8/9/10. // Hide the
+`template` element in IE 8/9/10/11, Safari, and Firefox &lt; 22. //</p>
+
+<p>[hidden], template {</p>
+
+<pre>display: none;</pre>
+
+<p>}</p>
+
+<p>// Links //
+==========================================================================</p>
+
+<p>// // Remove the gray background color from active links in IE 10. //</p>
+
+<p>a {</p>
+
+<pre>background-color: transparent;</pre>
+
+<p>}</p>
+
+<p>// // Improve readability of focused elements when they are also in an //
+active/hover state. //</p>
+
+<p>a:active, a:hover {</p>
+
+<pre>outline: 0;</pre>
+
+<p>}</p>
+
+<p>// Text-level semantics //
+==========================================================================</p>
+
+<p>// // Address styling not present in IE 8/9/10/11, Safari, and Chrome. //</p>
+
+<p><a href="title">abbr</a> {</p>
+
+<pre>border-bottom: 1px dotted;</pre>
+
+<p>}</p>
+
+<p>// // Address style set to `bolder` in Firefox 4+, Safari, and Chrome. //</p>
+
+<p>b, strong {</p>
+
+<pre>font-weight: bold;</pre>
+
+<p>}</p>
+
+<p>// // Address styling not present in Safari and Chrome. //</p>
+
+<p>dfn {</p>
+
+<pre>font-style: italic;</pre>
+
+<p>}</p>
+
+<p>// // Address variable `h1` font-size and margin within `section` and
+`article` // contexts in Firefox 4+, Safari, and Chrome. //</p>
+
+<p>h1 {</p>
+
+<pre>font-size: 2em;
+margin: 0.67em 0;</pre>
+
+<p>}</p>
+
+<p>// // Address styling not present in IE 8/9. //</p>
+
+<p>mark {</p>
+
+<pre>background: #ff0;
+color: #000;</pre>
+
+<p>}</p>
+
+<p>// // Address inconsistent and variable font size in all browsers. //</p>
+
+<p>small {</p>
+
+<pre>font-size: 80%;</pre>
+
+<p>}</p>
+
+<p>// // Prevent `sub` and `sup` affecting `line-height` in all browsers. //</p>
+
+<p>sub, sup {</p>
+
+<pre>font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;</pre>
+
+<p>}</p>
+
+<p>sup {</p>
+
+<pre>top: -0.5em;</pre>
+
+<p>}</p>
+
+<p>sub {</p>
+
+<pre>bottom: -0.25em;</pre>
+
+<p>}</p>
+
+<p>// Embedded content //
+==========================================================================</p>
+
+<p>// // Remove border when inside `a` element in IE 8/9/10. //</p>
+
+<p>img {</p>
+
+<pre>border: 0;</pre>
+
+<p>}</p>
+
+<p>// // Correct overflow not hidden in IE 9/10/11. //</p>
+
+<p>svg:not(:root) {</p>
+
+<pre>overflow: hidden;</pre>
+
+<p>}</p>
+
+<p>// Grouping content //
+==========================================================================</p>
+
+<p>// // Address margin not present in IE 8/9 and Safari. //</p>
+
+<p>figure {</p>
+
+<pre>margin: 1em 40px;</pre>
+
+<p>}</p>
+
+<p>// // Address differences between Firefox and other browsers. //</p>
+
+<p>hr {</p>
+
+<pre>box-sizing: content-box;
+height: 0;</pre>
+
+<p>}</p>
+
+<p>// // Contain overflow in all browsers. //</p>
+
+<p>pre {</p>
+
+<pre>overflow: auto;</pre>
+
+<p>}</p>
+
+<p>// // Address odd `em`-unit font size rendering in all browsers. //</p>
+
+<p>code, kbd, pre, samp {</p>
+
+<pre>font-family: monospace, monospace;
+font-size: 1em;</pre>
+
+<p>}</p>
+
+<p>// Forms //
+==========================================================================</p>
+
+<p>// // Known limitation: by default, Chrome and Safari on OS X allow very
+limited // styling of `select`, unless a `border` property is set. //</p>
+
+<p>// // 1. Correct color not being inherited. //    Known issue: affects
+color of disabled elements. // 2. Correct font properties not being
+inherited. // 3. Address margins set differently in Firefox 4+, Safari, and
+Chrome. //</p>
+
+<p>button, input, optgroup, select, textarea {</p>
+
+<pre>color: inherit; // 1
+font: inherit; // 2
+margin: 0; // 3</pre>
+
+<p>}</p>
+
+<p>// // Address `overflow` set to `hidden` in IE 8/9/10/11. //</p>
+
+<p>button {</p>
+
+<pre>overflow: visible;</pre>
+
+<p>}</p>
+
+<p>// // Address inconsistent `text-transform` inheritance for `button` and
+`select`. // All other form control elements do not inherit
+`text-transform` values. // Correct `button` style inheritance in Firefox,
+IE 8/9/10/11, and Opera. // Correct `select` style inheritance in Firefox.
+//</p>
+
+<p>button, select {</p>
+
+<pre>text-transform: none;</pre>
+
+<p>}</p>
+
+<p>// // 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native
+`audio` //    and `video` controls. // 2. Correct inability to style
+clickable `input` types in iOS. // 3. Improve usability and consistency of
+cursor style between image-type //    `input` and others. //</p>
+
+<p>button, html <a href="type="button"">input</a>, // 1 <a
+href="type="reset"">input</a>, <a href="type="submit"">input</a> {</p>
+
+<pre>-webkit-appearance: button; // 2
+cursor: pointer; // 3</pre>
+
+<p>}</p>
+
+<p>// // Re-set default cursor for disabled elements. //</p>
+
+<p><a href="disabled">button</a>, html <a href="disabled">input</a> {</p>
+
+<pre>cursor: default;</pre>
+
+<p>}</p>
+
+<p>// // Remove inner padding and border in Firefox 4+. //</p>
+
+<p>button::-moz-focus-inner, input::-moz-focus-inner {</p>
+
+<pre>border: 0;
+padding: 0;</pre>
+
+<p>}</p>
+
+<p>// // Address Firefox 4+ setting `line-height` on `input` using
+`!important` in // the UA stylesheet. //</p>
+
+<p>input {</p>
+
+<pre>line-height: normal;</pre>
+
+<p>}</p>
+
+<p>// // It&#39;s recommended that you don&#39;t attempt to style these
+elements. // Firefox&#39;s implementation doesn&#39;t respect box-sizing,
+padding, or width. // // 1. Address box sizing set to `content-box` in IE
+8/9/10. // 2. Remove excess padding in IE 8/9/10. //</p>
+
+<p><a href="type="checkbox"">input</a>, <a href="type="radio"">input</a> {</p>
+
+<pre>box-sizing: border-box; // 1
+padding: 0; // 2</pre>
+
+<p>}</p>
+
+<p>// // Fix the cursor style for Chrome&#39;s increment/decrement buttons.
+For certain // `font-size` values of the `input`, it causes the cursor
+style of the // decrement button to change from `default` to `text`. //</p>
+
+<p><a href="type="number"">input</a>::-webkit-inner-spin-button, <a
+href="type="number"">input</a>::-webkit-outer-spin-button {</p>
+
+<pre>height: auto;</pre>
+
+<p>}</p>
+
+<p>// // 1. Address `appearance` set to `searchfield` in Safari and Chrome. //
+2. Address `box-sizing` set to `border-box` in Safari and Chrome. //</p>
+
+<p><a href="type="search"">input</a> {</p>
+
+<pre>-webkit-appearance: textfield; // 1
+box-sizing: content-box; //2</pre>
+
+<p>}</p>
+
+<p>// // Remove inner padding and search cancel button in Safari and Chrome on
+OS X. // Safari (but not Chrome) clips the cancel button when the search
+input has // padding (and `textfield` appearance). //</p>
+
+<p><a href="type="search"">input</a>::-webkit-search-cancel-button, <a
+href="type="search"">input</a>::-webkit-search-decoration {</p>
+
+<pre>-webkit-appearance: none;</pre>
+
+<p>}</p>
+
+<p>// // Define consistent border, margin, and padding. //</p>
+
+<p>fieldset {</p>
+
+<pre>border: 1px solid #c0c0c0;
+margin: 0 2px;
+padding: 0.35em 0.625em 0.75em;</pre>
+
+<p>}</p>
+
+<p>// // 1. Correct `color` not being inherited in IE 8/9/10/11. // 2. Remove
+padding so people aren&#39;t caught out if they zero out fieldsets. //</p>
+
+<p>legend {</p>
+
+<pre>border: 0; // 1
+padding: 0; // 2</pre>
+
+<p>}</p>
+
+<p>// // Remove default vertical scrollbar in IE 8/9/10/11. //</p>
+
+<p>textarea {</p>
+
+<pre>overflow: auto;</pre>
+
+<p>}</p>
+
+<p>// // Don&#39;t inherit the `font-weight` (applied by a rule above). //
+NOTE: the default cannot safely be changed in Chrome and Safari on OS X. //</p>
+
+<p>optgroup {</p>
+
+<pre>font-weight: bold;</pre>
+
+<p>}</p>
+
+<p>// Tables //
+==========================================================================</p>
+
+<p>// // Remove most spacing between table cells. //</p>
+
+<p>table {</p>
+
+<pre>border-collapse: collapse;
+border-spacing: 0;</pre>
+
+<p>}</p>
+
+<p>td, th {</p>
+
+<pre>padding: 0;</pre>
+
+<p>}</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

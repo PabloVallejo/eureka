@@ -1,6 +1,10 @@
 class Item < ActiveRecord::Base
 
+  # Author.
   belongs_to :created_by, class_name: 'User'
+
+  # Attachments.
+  has_many :attachments, class_name: 'ItemAttachment'
 
   #
   # Model string representation.

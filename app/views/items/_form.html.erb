@@ -1,8 +1,11 @@
 
-<%= bootstrap_form_for(@item) do |f| %>
+<%= bootstrap_form_for(@item, :html => {:multipart => true}) do |f| %>
     <%= f.text_field :title, { label: "Titulo", placeholder: "e.j Maletín Totto..." } %>
     <%= f.text_area :description, { label: "Descripción" } %>
     <%= f.select :status, [['Perdido', 'perdido'], ['Encontrado', 'encontrado']], { label: "Estado" } %>
+    <div class="form-group">
+        <%= file_field_tag "files[]", multiple: true %>
+    </div>
     <%= f.submit 'Publicar', class: 'btn btn-success' %>
 <% end -%>
 

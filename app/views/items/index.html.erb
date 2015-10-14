@@ -4,7 +4,7 @@
 
     <% if !@items.blank? %>
         <ul class="list-unstyled item-list">
-            <% for item in @items %>
+            <% for item in @items.order(id: :desc) %>
                 <li>
                     <a href="<%= item_path(item) %>">
                         <img class="img-circle" src="https://graph.facebook.com/<%= item.created_by.uid %>/picture?type=small" alt="<%= item.created_by %>" width="40" height="40">

@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>README - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../../";
+</script>
+
+<script src="../../../../js/jquery.js"></script>
+<script src="../../../../js/darkfish.js"></script>
+
+<link href="../../../../css/fonts.css" rel="stylesheet">
+<link href="../../../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../../../table_of_contents.html#pages">Pages</a>
+    <a href="../../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+<div class="nav-section">
+  <h3>Table of Contents</h3>
+
+  <ul class="link-list" role="directory">
+    <li><a href="#label-Bootstrap"><a href="http://getbootstrap.com">Bootstrap</a></a>
+    <li><a href="#label-Table+of+contents">Table of contents</a>
+    <li><a href="#label-Quick+start">Quick start</a>
+    <li><a href="#label-What-27s+included">What&#39;s included</a>
+    <li><a href="#label-Bugs+and+feature+requests">Bugs and feature requests</a>
+    <li><a href="#label-Documentation">Documentation</a>
+    <li><a href="#label-Running+documentation+locally">Running documentation locally</a>
+    <li><a href="#label-Documentation+for+previous+releases">Documentation for previous releases</a>
+    <li><a href="#label-Contributing">Contributing</a>
+    <li><a href="#label-Community">Community</a>
+    <li><a href="#label-Versioning">Versioning</a>
+    <li><a href="#label-Creators">Creators</a>
+    <li><a href="#label-Copyright+and+license">Copyright and license</a>
+  </ul>
+</div>
+
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../../Gemfile.html">Gemfile</a>
+  
+    <li><a href="../../../../Gemfile_lock.html">Gemfile.lock</a>
+  
+    <li><a href="../../../../Procfile.html">Procfile</a>
+  
+    <li><a href="../../../../README_md.html">README</a>
+  
+    <li><a href="../../../../Rakefile.html">Rakefile</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/Gruntfile_js.html">Gruntfile.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/LICENSE.html">LICENSE</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/README_md.html">README</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_css.html">bootstrap-theme.css</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_css_map.html">bootstrap-theme.css.map</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/css/bootstrap-theme_min_css.html">bootstrap-theme.min.css</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/css/bootstrap_css.html">bootstrap.css</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/css/bootstrap_css_map.html">bootstrap.css.map</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/css/bootstrap_min_css.html">bootstrap.min.css</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/js/bootstrap_js.html">bootstrap.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/js/bootstrap_min_js.html">bootstrap.min.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/dist/js/npm_js.html">npm.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/fonts/glyphicons-halflings-regular_svg.html">glyphicons-halflings-regular.svg</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/grunt/bs-commonjs-generator_js.html">bs-commonjs-generator.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/grunt/bs-glyphicons-data-generator_js.html">bs-glyphicons-data-generator.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/grunt/bs-lessdoc-parser_js.html">bs-lessdoc-parser.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/grunt/bs-raw-files-generator_js.html">bs-raw-files-generator.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/grunt/configBridge_json.html">configBridge.json</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/affix_js.html">affix.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/alert_js.html">alert.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/button_js.html">button.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/carousel_js.html">carousel.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/collapse_js.html">collapse.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/dropdown_js.html">dropdown.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/modal_js.html">modal.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/popover_js.html">popover.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/scrollspy_js.html">scrollspy.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/tab_js.html">tab.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/tooltip_js.html">tooltip.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/js/transition_js.html">transition.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/badges_less.html">badges.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/bootstrap_less.html">bootstrap.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/breadcrumbs_less.html">breadcrumbs.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/button-groups_less.html">button-groups.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/carousel_less.html">carousel.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/close_less.html">close.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/code_less.html">code.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/component-animations_less.html">component-animations.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/dropdowns_less.html">dropdowns.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/glyphicons_less.html">glyphicons.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/input-groups_less.html">input-groups.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/jumbotron_less.html">jumbotron.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/media_less.html">media.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins_less.html">mixins.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/alerts_less.html">alerts.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/background-variant_less.html">background-variant.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/border-radius_less.html">border-radius.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/buttons_less.html">buttons.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/center-block_less.html">center-block.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/clearfix_less.html">clearfix.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/forms_less.html">forms.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/gradients_less.html">gradients.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/grid-framework_less.html">grid-framework.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/grid_less.html">grid.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/hide-text_less.html">hide-text.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/image_less.html">image.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/labels_less.html">labels.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/list-group_less.html">list-group.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/nav-divider_less.html">nav-divider.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/nav-vertical-align_less.html">nav-vertical-align.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/opacity_less.html">opacity.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/progress-bar_less.html">progress-bar.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/reset-filter_less.html">reset-filter.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/reset-text_less.html">reset-text.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/resize_less.html">resize.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/responsive-visibility_less.html">responsive-visibility.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/size_less.html">size.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/tab-focus_less.html">tab-focus.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/table-row_less.html">table-row.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/text-emphasis_less.html">text-emphasis.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/text-overflow_less.html">text-overflow.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/mixins/vendor-prefixes_less.html">vendor-prefixes.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/modals_less.html">modals.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/navbar_less.html">navbar.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/navs_less.html">navs.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/normalize_less.html">normalize.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/pager_less.html">pager.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/pagination_less.html">pagination.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/panels_less.html">panels.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/popovers_less.html">popovers.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/print_less.html">print.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/progress-bars_less.html">progress-bars.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/responsive-embed_less.html">responsive-embed.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/responsive-utilities_less.html">responsive-utilities.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/scaffolding_less.html">scaffolding.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/tables_less.html">tables.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/theme_less.html">theme.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/thumbnails_less.html">thumbnails.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/tooltip_less.html">tooltip.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/type_less.html">type.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/utilities_less.html">utilities.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/variables_less.html">variables.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/less/wells_less.html">wells.less</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/package_js.html">package.js</a>
+  
+    <li><a href="../../../../app/assets/components/bootstrap/package_json.html">package.json</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/MIT-LICENSE_txt.html">MIT-LICENSE</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/dist/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/dist/jquery_min_js.html">jquery.min.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/dist/jquery_min_map.html">jquery.min.map</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/jsonp_js.html">jsonp.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/load_js.html">load.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/parseJSON_js.html">parseJSON.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/parseXML_js.html">parseXML.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/script_js.html">script.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/var/nonce_js.html">nonce.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/var/rquery_js.html">rquery.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/ajax/xhr_js.html">xhr.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/attributes_js.html">attributes.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/attributes/attr_js.html">attr.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/attributes/classes_js.html">classes.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/attributes/prop_js.html">prop.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/attributes/support_js.html">support.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/attributes/val_js.html">val.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/callbacks_js.html">callbacks.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/core_js.html">core.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/core/access_js.html">access.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/core/init_js.html">init.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/core/parseHTML_js.html">parseHTML.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/core/ready_js.html">ready.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/core/var/rsingleTag_js.html">rsingleTag.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css_js.html">css.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/addGetHookIf_js.html">addGetHookIf.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/curCSS_js.html">curCSS.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/defaultDisplay_js.html">defaultDisplay.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/hiddenVisibleSelectors_js.html">hiddenVisibleSelectors.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/support_js.html">support.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/swap_js.html">swap.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/var/cssExpand_js.html">cssExpand.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/var/getStyles_js.html">getStyles.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/var/isHidden_js.html">isHidden.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/var/rmargin_js.html">rmargin.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/css/var/rnumnonpx_js.html">rnumnonpx.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/data_js.html">data.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/data/Data_js.html">Data.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/data/accepts_js.html">accepts.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/data/var/data_priv_js.html">data_priv.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/data/var/data_user_js.html">data_user.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/deferred_js.html">deferred.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/deprecated_js.html">deprecated.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/dimensions_js.html">dimensions.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/effects_js.html">effects.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/effects/Tween_js.html">Tween.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/effects/animatedSelector_js.html">animatedSelector.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/event_js.html">event.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/event/ajax_js.html">ajax.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/event/alias_js.html">alias.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/event/support_js.html">support.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/exports/amd_js.html">amd.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/exports/global_js.html">global.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/intro_js.html">intro.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/jquery_js.html">jquery.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/manipulation_js.html">manipulation.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/manipulation/_evalUrl_js.html">_evalUrl.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/manipulation/support_js.html">support.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/manipulation/var/rcheckableType_js.html">rcheckableType.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/offset_js.html">offset.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/outro_js.html">outro.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/queue_js.html">queue.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/queue/delay_js.html">delay.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/selector-native_js.html">selector-native.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/selector-sizzle_js.html">selector-sizzle.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/selector_js.html">selector.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/serialize_js.html">serialize.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_js.html">sizzle.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_min_js.html">sizzle.min.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/sizzle/dist/sizzle_min_map.html">sizzle.min.map</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/traversing_js.html">traversing.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/traversing/findFilter_js.html">findFilter.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/traversing/var/rneedsContext_js.html">rneedsContext.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/arr_js.html">arr.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/class2type_js.html">class2type.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/concat_js.html">concat.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/hasOwn_js.html">hasOwn.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/indexOf_js.html">indexOf.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/pnum_js.html">pnum.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/push_js.html">push.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/rnotwhite_js.html">rnotwhite.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/slice_js.html">slice.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/strundefined_js.html">strundefined.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/support_js.html">support.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/var/toString_js.html">toString.js</a>
+  
+    <li><a href="../../../../app/assets/components/jquery/src/wrap_js.html">wrap.js</a>
+  
+    <li><a href="../../../../app/assets/javascripts/application_js.html">application.js</a>
+  
+    <li><a href="../../../../app/assets/javascripts/global_coffee.html">global.coffee</a>
+  
+    <li><a href="../../../../app/assets/stylesheets/application_css.html">application.css</a>
+  
+    <li><a href="../../../../app/assets/stylesheets/carousel_sass.html">carousel.sass</a>
+  
+    <li><a href="../../../../app/assets/stylesheets/home_sass.html">home.sass</a>
+  
+    <li><a href="../../../../app/views/items/index_json_jbuilder.html">index.json.jbuilder</a>
+  
+    <li><a href="../../../../app/views/items/show_json_jbuilder.html">show.json.jbuilder</a>
+  
+    <li><a href="../../../../bower_json.html">bower.json</a>
+  
+    <li><a href="../../../../config_ru.html">config.ru</a>
+  
+    <li><a href="../../../../log/development_log.html">development.log</a>
+  
+    <li><a href="../../../../public/404_html.html">404.html</a>
+  
+    <li><a href="../../../../public/422_html.html">422.html</a>
+  
+    <li><a href="../../../../public/500_html.html">500.html</a>
+  
+    <li><a href="../../../../public/favicon_ico.html">favicon.ico</a>
+  
+    <li><a href="../../../../public/robots_txt.html">robots</a>
+  
+    <li><a href="../../../../tmp/pids/server_pid.html">server.pid</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page app/assets/components/bootstrap/README.md">
+
+<h1 id="label-Bootstrap"><a href="http://getbootstrap.com">Bootstrap</a><span><a href="#label-Bootstrap">&para;</a> <a href="#top">&uarr;</a></span></h1>
+
+<p><a href="https://bootstrap-slack.herokuapp.com"><img
+src="https://bootstrap-slack.herokuapp.com/badge.svg"></a> <img
+src="https://img.shields.io/bower/v/bootstrap.svg"> <a
+href="https://www.npmjs.com/package/bootstrap"><img
+src="https://img.shields.io/npm/v/bootstrap.svg"></a> <a
+href="https://travis-ci.org/twbs/bootstrap"><img
+src="https://img.shields.io/travis/twbs/bootstrap/master.svg"></a> <a
+href="https://david-dm.org/twbs/bootstrap#info=devDependencies"><img
+src="https://img.shields.io/david/dev/twbs/bootstrap.svg"></a> <a
+href="https://saucelabs.com/u/bootstrap"><img
+src="https://saucelabs.com/browser-matrix/bootstrap.svg"></a></p>
+
+<p>Bootstrap is a sleek, intuitive, and powerful front-end framework for
+faster and easier web development, created by <a
+href="https://twitter.com/mdo">Mark Otto</a> and <a
+href="https://twitter.com/fat">Jacob Thornton</a>, and maintained by the <a
+href="https://github.com/orgs/twbs/people">core team</a> with the massive
+support and involvement of the community.</p>
+
+<p>To get started, check out <a
+href="http://getbootstrap.com">getbootstrap.com</a>!</p>
+
+<h2 id="label-Table+of+contents">Table of contents<span><a href="#label-Table+of+contents">&para;</a> <a href="#top">&uarr;</a></span></h2>
+<ul><li>
+<p><a href="#quick-start">Quick start</a></p>
+</li><li>
+<p><a href="#bugs-and-feature-requests">Bugs and feature requests</a></p>
+</li><li>
+<p><a href="#documentation">Documentation</a></p>
+</li><li>
+<p><a href="#contributing">Contributing</a></p>
+</li><li>
+<p><a href="#community">Community</a></p>
+</li><li>
+<p><a href="#versioning">Versioning</a></p>
+</li><li>
+<p><a href="#creators">Creators</a></p>
+</li><li>
+<p><a href="#copyright-and-license">Copyright and license</a></p>
+</li></ul>
+
+<h2 id="label-Quick+start">Quick start<span><a href="#label-Quick+start">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Several quick start options are available:</p>
+<ul><li>
+<p><a href="https://github.com/twbs/bootstrap/archive/v3.3.5.zip">Download the
+latest release</a>.</p>
+</li><li>
+<p>Clone the repo: <code>git clone
+https://github.com/twbs/bootstrap.git</code>.</p>
+</li><li>
+<p>Install with <a href="http://bower.io">Bower</a>: <code>bower install
+bootstrap</code>.</p>
+</li><li>
+<p>Install with <a href="https://www.npmjs.com">npm</a>: <code>npm install
+bootstrap</code>.</p>
+</li><li>
+<p>Install with <a href="https://www.meteor.com">Meteor</a>: <code>meteor add
+twbs:bootstrap</code>.</p>
+</li><li>
+<p>Install with <a href="https://getcomposer.org">Composer</a>: <code>composer
+require twbs/bootstrap</code>.</p>
+</li></ul>
+
+<p>Read the <a href="http://getbootstrap.com/getting-started/">Getting started
+page</a> for information on the framework contents, templates and examples,
+and more.</p>
+
+<h3 id="label-What-27s+included">What&#39;s included<span><a href="#label-What-27s+included">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Within the download you&#39;ll find the following directories and files,
+logically grouping common assets and providing both compiled and minified
+variations. You&#39;ll see something like this:</p>
+
+<pre>bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.css.map
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   ├── bootstrap-theme.css.map
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    ├── glyphicons-halflings-regular.woff
+    └── glyphicons-halflings-regular.woff2</pre>
+
+<p>We provide compiled CSS and JS (<code>bootstrap.*</code>), as well as
+compiled and minified CSS and JS (<code>bootstrap.min.*</code>). CSS <a
+href="https://developer.chrome.com/devtools/docs/css-preprocessors">source
+maps</a> (<code>bootstrap.*.map</code>) are available for use with certain
+browsers&#39; developer tools. Fonts from Glyphicons are included, as is
+the optional Bootstrap theme.</p>
+
+<h2 id="label-Bugs+and+feature+requests">Bugs and feature requests<span><a href="#label-Bugs+and+feature+requests">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Have a bug or a feature request? Please first read the <a
+href="https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md#using-the-issue-tracker">issue
+guidelines</a> and search for existing and closed issues. If your problem
+or idea is not addressed yet, <a
+href="https://github.com/twbs/bootstrap/issues/new">please open a new
+issue</a>.</p>
+
+<h2 id="label-Documentation">Documentation<span><a href="#label-Documentation">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Bootstrap&#39;s documentation, included in this repo in the root directory,
+is built with <a href="http://jekyllrb.com">Jekyll</a> and publicly hosted
+on GitHub Pages at <a href="http://getbootstrap.com">getbootstrap.com</a>.
+The docs may also be run locally.</p>
+
+<h3 id="label-Running+documentation+locally">Running documentation locally<span><a href="#label-Running+documentation+locally">&para;</a> <a href="#top">&uarr;</a></span></h3>
+<ol><li>
+<p>If necessary, <a href="http://jekyllrb.com/docs/installation">install
+Jekyll</a> (requires v2.5.x).</p>
+</li><li>
+<p><strong>Windows users:</strong> Read <a
+href="http://jekyll-windows.juthilo.com/">this unofficial guide</a> to get
+Jekyll up and running without problems.</p>
+</li><li>
+<p>Install the Ruby-based syntax highlighter, <a
+href="https://github.com/jneen/rouge">Rouge</a>, with <code>gem install
+rouge</code>.</p>
+</li><li>
+<p>From the root <code>/bootstrap</code> directory, run <code>jekyll
+serve</code> in the command line.</p>
+</li><li>
+<p>Open <a href="http://localhost:9001">localhost:9001</a> in your browser,
+and voilà.</p>
+</li></ol>
+
+<p>Learn more about using Jekyll by reading its <a
+href="http://jekyllrb.com/docs/home/">documentation</a>.</p>
+
+<h3 id="label-Documentation+for+previous+releases">Documentation for previous releases<span><a href="#label-Documentation+for+previous+releases">&para;</a> <a href="#top">&uarr;</a></span></h3>
+
+<p>Documentation for v2.3.2 has been made available for the time being at <a
+href="http://getbootstrap.com/2.3.2">getbootstrap.com/2.3.2</a>/ while
+folks transition to Bootstrap 3.</p>
+
+<p><a href="https://github.com/twbs/bootstrap/releases">Previous releases</a>
+and their documentation are also available for download.</p>
+
+<h2 id="label-Contributing">Contributing<span><a href="#label-Contributing">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Please read through our <a
+href="https://github.com/twbs/bootstrap/blob/master/CONTRIBUTING.md">contributing
+guidelines</a>. Included are directions for opening issues, coding
+standards, and notes on development.</p>
+
+<p>Moreover, if your pull request contains JavaScript patches or features, you
+must include <a
+href="https://github.com/twbs/bootstrap/tree/master/js/tests">relevant unit
+tests</a>. All HTML and CSS should conform to the <a
+href="https://github.com/mdo/code-guide">Code Guide</a>, maintained by <a
+href="https://github.com/mdo">Mark Otto</a>.</p>
+
+<p>Editor preferences are available in the <a
+href="https://github.com/twbs/bootstrap/blob/master/.editorconfig">editor
+config</a> for easy use in common text editors. Read more and download
+plugins at <a href="http://editorconfig.org">editorconfig.org</a>.</p>
+
+<h2 id="label-Community">Community<span><a href="#label-Community">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Get updates on Bootstrap&#39;s development and chat with the project
+maintainers and community members.</p>
+<ul><li>
+<p>Follow <a href="https://twitter.com/getbootstrap">@getbootstrap on
+Twitter</a>.</p>
+</li><li>
+<p>Read and subscribe to <a href="http://blog.getbootstrap.com">The Official
+Bootstrap Blog</a>.</p>
+</li><li>
+<p>Join <a href="https://bootstrap-slack.herokuapp.com">the official Slack
+room</a>.</p>
+</li><li>
+<p>Chat with fellow Bootstrappers in IRC. On the <code>irc.freenode.net</code>
+server, in the <code>##bootstrap</code> channel.</p>
+</li><li>
+<p>Implementation help may be found at Stack Overflow (tagged <a
+href="https://stackoverflow.com/questions/tagged/twitter-bootstrap-3">twitter-bootstrap-3</a>).</p>
+</li><li>
+<p>Developers should use the keyword <code>bootstrap</code> on packages which
+modify or add to the functionality of Bootstrap when distributing through
+<a href="https://www.npmjs.com/browse/keyword/bootstrap">npm</a> or similar
+delivery mechanisms for maximum discoverability.</p>
+</li></ul>
+
+<h2 id="label-Versioning">Versioning<span><a href="#label-Versioning">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>For transparency into our release cycle and in striving to maintain
+backward compatibility, Bootstrap is maintained under <a
+href="http://semver.org/">the Semantic Versioning guidelines</a>. Sometimes
+we screw up, but we&#39;ll adhere to those rules whenever possible.</p>
+
+<h2 id="label-Creators">Creators<span><a href="#label-Creators">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p><strong>Mark Otto</strong></p>
+<ul><li>
+<p><a href="https://twitter.com/mdo">twitter.com/mdo</a></p>
+</li><li>
+<p><a href="https://github.com/mdo">github.com/mdo</a></p>
+</li></ul>
+
+<p><strong>Jacob Thornton</strong></p>
+<ul><li>
+<p><a href="https://twitter.com/fat">twitter.com/fat</a></p>
+</li><li>
+<p><a href="https://github.com/fat">github.com/fat</a></p>
+</li></ul>
+
+<h2 id="label-Copyright+and+license">Copyright and license<span><a href="#label-Copyright+and+license">&para;</a> <a href="#top">&uarr;</a></span></h2>
+
+<p>Code and documentation copyright 2011-2015 Twitter, Inc. Code released
+under <a href="https://github.com/twbs/bootstrap/blob/master/LICENSE">the
+MIT license</a>. Docs released under <a
+href="https://github.com/twbs/bootstrap/blob/master/docs/LICENSE">Creative
+Commons</a>.</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

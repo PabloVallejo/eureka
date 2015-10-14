@@ -32,6 +32,17 @@ class ItemsController < ApplicationController
 
     respond_to do |format|
       if @item.save
+
+        # Save attachments.
+        if params[:files]
+          params[:files].each do |file|
+            @item.attachments.create(
+              file: file,
+              created_by: current_user
+            )
+          end
+        end
+
         format.html { redirect_to @item, notice: 'Item was successfully created.' }
         format.json { render :show, status: :created, location: @item }
       else
