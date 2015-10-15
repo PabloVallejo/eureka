@@ -4,8 +4,10 @@ one:
   title: MyString
   description: MyText
   status: MyString
+  created_by_id: 1
 
 two:
   title: MyString
   description: MyText
   status: MyString
+  created_by_id: 1

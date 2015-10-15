@@ -1,0 +1,16 @@
+# General.
+language: ruby
+cache: bundler
+
+# Run before.
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database insight_testing;' -U postgres
+
+# Environmental variables.
+# Note: These access keys are not real.
+env:
+  global:
+    - AWS_ACCESS_KEY_ID=AKIFJQ1SZH39PEQLE6HA
+    - AWS_SECRET_ACCESS_KEY="U+GgXDsmaf4hsKyyUXe94MKGiAQ5VsBK1Mg7ghsO"
+    - S3_BUCKET=dummy-bucket
