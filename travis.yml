@@ -2,6 +2,9 @@
 language: ruby
 cache: bundler
 
+rvm:
+  - 2.2.0
+
 # Run before.
 before_script:
   - cp config/database.yml.travis config/database.yml
