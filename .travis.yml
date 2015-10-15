@@ -8,7 +8,7 @@ rvm:
 # Run before.
 before_script:
   - cp config/database.yml.travis config/database.yml
-  - psql -c 'create database insight_testing;' -U postgres
+  - psql -c 'create database eureka_testing;' -U postgres
 
 # Environmental variables.
 # Note: These access keys are not real.
