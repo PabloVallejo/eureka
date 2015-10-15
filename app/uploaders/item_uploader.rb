@@ -25,7 +25,7 @@ class ItemUploader < CarrierWave::Uploader::Base
   # end
 
   # Resize uploads.
-  proocess :resize_to_fit => [800, 800]
+  process :resize_to_fit => [800, 800]
 
   # Process files as they are uploaded:
   # process :scale => [200, 300]
