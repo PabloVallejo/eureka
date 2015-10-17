@@ -43,7 +43,7 @@ class ItemsController < ApplicationController
           end
         end
 
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
+        format.html { redirect_to @item, notice: 'Registrate tu objeto con exito.' }
         format.json { render :show, status: :created, location: @item }
       else
         format.html { render :new }
