@@ -50,6 +50,9 @@ gem 'bootstrap_form'
 # Minimagic
 gem 'mini_magick'
 
+# Puma server.
+gem 'puma'
+
 # Documentation.
 gem 'rdoc', '~> 4.2.0'
 
