@@ -9,3 +9,11 @@ rvm:
 before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database eureka_testing;' -U postgres
+
+# Environmental variables.
+# Note: These access keys are not real.
+env:
+  global:
+    - AWS_ACCESS_KEY_ID=''
+    - AWS_SECRET_ACCESS_KEY=""
+    - S3_BUCKET=dummy-bucket
