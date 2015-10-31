@@ -10,6 +10,8 @@ before_script:
   - cp config/database.yml.travis config/database.yml
   - psql -c 'create database eureka_testing;' -U postgres
 
+script: rspec spec
+
 # Environmental variables.
 # Note: These access keys are not real.
 env:
