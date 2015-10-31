@@ -2,7 +2,10 @@
 # Factory Girl factories.
 #
 
-FactoryGirl.define do
+FactoryGirl.define do  factory :item do
+    
+  end
+
 
     # User
     factory :user do
