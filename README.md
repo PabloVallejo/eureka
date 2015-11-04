@@ -4,6 +4,8 @@
 
 Eureka is a simple Rails app to publish objects that have been found or lost on campus.
 
+![Eureka](https://s3-us-west-2.amazonaws.com/eureka-app/eureka.png)
+
 
 ## Quick start
 
