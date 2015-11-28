@@ -49,5 +49,7 @@ module Eureka
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # config.action_dispatch.show_exceptions = false # this is the default setting in production
   end
 end

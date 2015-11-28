@@ -53,6 +53,9 @@ gem 'mini_magick'
 # Puma server.
 gem 'puma'
 
+# Error tracking.
+gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
+
 # Documentation.
 gem 'rdoc', '~> 4.2.0'
 
@@ -63,6 +66,9 @@ group :development, :test do
   # Testing.
   gem 'rspec-rails', '~> 3.3.0'
   gem 'factory_girl_rails', '~> 4.5.0'
+
+  # Faker.
+  gem 'faker', '~> 1.6.0'
 end
 
 group :development do
