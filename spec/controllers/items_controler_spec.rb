@@ -12,7 +12,7 @@ RSpec.describe ItemsController do
       get :index
 
       expect(response).to render_template(:index)
-      expect(assigns(:items).length).to eq(4)
+      expect(assigns(:items).length).to eq(2)
     end
   end
 
