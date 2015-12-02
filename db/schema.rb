@@ -11,10 +11,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014201711) do
+ActiveRecord::Schema.define(version: 20151202184119) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "category_category_researches", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "category_category_social_projections", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "category_category_teachings", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "indicator_indicator_completeds", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "indicator_indicator_percentages", force: :cascade do |t|
+    t.string   "name",       default: "", null: false
+    t.integer  "percentage", default: 0,  null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
 
   create_table "item_attachments", force: :cascade do |t|
     t.integer  "item_id",       null: false
@@ -31,6 +58,29 @@ ActiveRecord::Schema.define(version: 20151014201711) do
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
     t.integer  "created_by_id", null: false
+  end
+
+  create_table "semaphore_semaphore_completeds", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "semaphore_semaphore_percentages", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tasks", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.integer  "parent_id"
+    t.integer  "asigned_to_id"
+    t.string   "indicator_class"
+    t.string   "semaphore_class"
+    t.string   "category_class"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "indicator_id"
   end
 
   create_table "users", force: :cascade do |t|

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Eureka</title>
+    <title>Patterns</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -21,16 +21,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/">Eureka</a>
+                    <a class="navbar-brand" href="/">Patterns</a>
                 </div>
 
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav pull-right">
-                        <li>
-                            <%= link_to 'Registrar objeto', new_item_path, class: 'btn btn-success new-item', :data => { 'no-turbolink'=> 'true'} %>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </nav>
     </div>
@@ -39,12 +32,11 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <%= image_tag('bg.jpg') %>
+            <div class="item active" style="background-image: url(https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?crop=entropy&fit=crop&fm=jpg&h=600&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1440); background-size: cover;">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Encuentra objetos perdidos</h1>
-                        <p>Encuentra y publica objetos perdidos en el Poli</p>
+                        <h1>Design patterns</h1>
+                        <p>Using design patterns in Ruby</p>
                     </div>
                 </div>
             </div>

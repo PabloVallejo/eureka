@@ -1,0 +1,35 @@
+<div class="container">
+
+    <p id="notice"><%= notice %></p>
+    <h1 class="text-center" style="margin-bottom: 40px;">Task list</h1>
+    <table class="table table-bordered table-hover table-stripped">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Description</th>
+          <th>Indicator</th>
+          <th>Category</th>
+          <th>Semaphore</th>
+          <th>Assigned to</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @tasks.each do |task| %>
+          <tr>
+            <td>
+                <%= link_to task.title, edit_task_path(task) %>
+            </td>
+            <td><%= truncate(task.description) %></td>
+            <td><%= task.get_indicator_value %></td>
+            <td><%= task.get_category_name %></td>
+            <td><%= task.get_semaphore_value %></td>
+            <td><%= task.asigned_to %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+    <%= link_to 'New Task', new_task_path %>
+
+</div>

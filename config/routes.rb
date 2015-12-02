@@ -3,15 +3,15 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'items#index'
+  root 'tasks#index'
 
   # Devise
   devise_for :users, :controllers => {:omniauth_callbacks => 'omniauth_callbacks'}
 
-  # Item
-  resources :items
+  # Tasks
+  resources :tasks
 
   # API.
-  post 'users/create-or-login' => 'users#create_or_login'
+  # post 'users/create-or-login' => 'users#create_or_login'
 
 end

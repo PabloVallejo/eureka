@@ -1,0 +1,12 @@
+
+<%= bootstrap_form_for(@task) do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_area :description %>
+    <%= f.select :indicator_class, @indicator_classes %>
+    <%= f.select :semaphore_class, @semaphore_classes %>
+    <%= f.select :category_class, @category_classes %>
+    <%= f.collection_select :asigned_to_id, User.all, :id, :first_name %>
+
+    <%= f.submit 'Save', class: 'btn btn-success' %>
+<% end -%>
+
